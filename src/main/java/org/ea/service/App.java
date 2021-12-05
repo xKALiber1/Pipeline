@@ -6,13 +6,13 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.print( "Ahhh    " );
+        System.out.print( "Ahhh    "  );
         sleep(400);
-        System.out.print( "Ahhh    " );
+        System.out.print( "Ahhh    "  );
         sleep(400);
-        System.out.print( "Ahhh    " );
+        System.out.print( "Ahhh    "  );
         sleep(400);
-        System.out.print( "Ahhh    " );
+        System.out.print( "Ahhh    "  );
         sleep(400);
         System.out.println( "Staying Alive!!" );
         System.out.println();
