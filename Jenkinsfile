@@ -16,13 +16,17 @@ pipeline {
 		}
         stage('push image') {
             steps {
-                docker.withRegistry()
                 sh 'docker push bjgomes/maven:latest'
             }
         }
         stage('Deploy') {
             steps {
                 sh 'echo"This step saved for Kubernetes"'
+            }
+        }
+        post {
+            always {
+                sh 'docker logout'
             }
         }
     }
