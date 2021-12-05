@@ -6,4 +6,4 @@ COPY pom.xml /usr/localservice/pom.xml
 COPY src /usr/local/service/src
 WORKDIR /usr/local/service
 RUN mvn package
-CMD ["java","-cp","taregt/"]
+CMD ["java","-cp","target/docker-service-1.0-SNAPSHOT.jar","org.ea.service.APP"]
