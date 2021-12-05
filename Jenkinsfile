@@ -24,10 +24,10 @@ pipeline {
                 sh 'echo"This step saved for Kubernetes"'
             }
         }
-        post {
-            always {
-                sh 'docker logout'
-            }
+    }
+    post {
+        always {
+            sh 'docker logout'
         }
     }
 }
