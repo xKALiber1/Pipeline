@@ -21,7 +21,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'echo"This step saved for Kubernetes"'
+                sh 'echo this step saved for kubernetes'
             }
         }
     }
