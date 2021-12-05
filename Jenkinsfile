@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build image') {
             steps {
-                sh 'docker build -t bjgomes/maven:latest'
+                sh 'docker build -t bjgomes/maven:latest .'
             }
         }
         stage('push image') {
