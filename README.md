@@ -67,18 +67,19 @@ Run first job
 Run first pipeline
 
     1. create pipeline
+    2. initialize github webhook with webhook relay
 
-set up webhook with Github
+        set up webhook with Github
 
 
-    install WebHookRelay
-        1. sudo wget -O /usr/local/bin/relay https://storage.googleapis.com/webhookrelay/downloads/relay-linux-amd64
-        2. sudo chmod +wx /usr/local/bin/relay
-        3. Login
-           1. relay login -k your-token-key -s your-token-secret
-        4. Set up forwarding
-           1. relay forward --bucket github-jenkins http://localhost:8080/github-webhook/
+            install WebHookRelay
+                1. sudo wget -O /usr/local/bin/relay https://storage.googleapis.com/webhookrelay/downloads/relay-linux-amd64
+                2. sudo chmod +wx /usr/local/bin/relay
+                3. Login
+                1. relay login -k your-token-key -s your-token-secret
+                4. Set up forwarding
+                1. relay forward --bucket github-jenkins http://localhost:8080/github-webhook/
 
-    Guide: https://webhookrelay.com/blog/2017/11/23/github-jenkins-guide/
+            Guide: https://webhookrelay.com/blog/2017/11/23/github-jenkins-guide/
 
 
