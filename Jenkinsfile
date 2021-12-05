@@ -1,5 +1,12 @@
 pipeline {
     agent any
 
-d    
+    stages {
+        stage(scm checkout) {
+            step {
+                scm checkout
+            }
+        }                         
+    }
 }
+
