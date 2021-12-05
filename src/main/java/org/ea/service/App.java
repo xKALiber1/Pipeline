@@ -1,6 +1,6 @@
 package org.ea.service;
 
-import java.lang.exception
+import java.lang.exception;
 
 public class App 
 {
