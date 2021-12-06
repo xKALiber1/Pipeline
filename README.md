@@ -18,10 +18,7 @@ Install git
     git config --global user.name "Brian"
     git config --global user.email "brian.james.gomes@gmail.com"
 
-Install Docker
 
-    sudo apt install docker.io -y
-    sudo chown ubuntu:ubuntu /var/run/docker.sock
 
 Install Jenkins
 
@@ -33,6 +30,13 @@ Install Jenkins
     sudo apt-get update
     sudo apt-get install jenkins
 
+Install Docker
+
+    sudo apt install docker.io -y
+    sudo usermod -aG docker $USER
+    sudo usermod -aG docker jenkins
+
+sudo service jenkins restart
 Restart terminal
 ___
 
@@ -81,6 +85,9 @@ Run first pipeline
                 1. relay forward --bucket github-jenkins http://localhost:8080/github-webhook/
 
             Guide: https://webhookrelay.com/blog/2017/11/23/github-jenkins-guide/
+    3. Set up docker credentials using token
 
-d6c1e831-874d-47fe-b6e4-a2ecc08c187d
+run pipeline
+
+
 
